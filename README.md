@@ -93,11 +93,6 @@ The system supports Admin and Student roles with secure JWT-based authentication
 
 ---
 
-## 👨‍💻 Author
-Shan Sankaran
-
----
-
 ## ✅ Project Status
 ✔ Individual Project  
 ✔ Full-stack implementation  
