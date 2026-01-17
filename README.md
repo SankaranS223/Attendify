@@ -97,7 +97,3 @@ The system supports Admin and Student roles with secure JWT-based authentication
 ✔ Individual Project  
 ✔ Full-stack implementation  
 ✔ Ready for submission / evaluation
-
-
-
-### Backend
