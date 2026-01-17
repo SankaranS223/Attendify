@@ -1,0 +1,425 @@
+/* ===============================
+   ADMIN LAYOUT
+================================ */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #ffffff;
+  border-right: 1px solid var(--border);
+  padding: 24px;
+}
+
+.logo {
+  color: var(--primary);
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.sidebar nav a.active {
+  background: #e0e7ff;
+  color: var(--primary);
+}
+
+.admin-main {
+  flex: 1;
+  padding: 32px;
+}
+
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #ffffff;
+  border-right: 1px solid var(--border);
+  padding: 24px;
+}
+
+.logo {
+  color: var(--primary);
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar nav a:hover {
+  background: #eef2ff;
+}
+
+.sidebar nav a.active {
+  background: #e0e7ff;
+  color: var(--primary);
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+
+.admin-main {
+  flex: 1;
+  padding: 32px;
+  max-width: calc(100vw - 220px);
+  overflow-x: hidden;
+}
+
+.admin-main h1 {
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   STUDENT FORM
+================================ */
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.student-form .btn {
+  align-self: end;
+}
+
+/* ===============================
+   STUDENTS TABLE (KEY SECTION)
+================================ */
+
+.student-table {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  overflow-x: auto; /* IMPORTANT */
+}
+
+.student-table table {
+  width: 100%;
+  min-width: 1000px; /* prevents column squeeze */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+/* Table Header */
+.student-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fafc;
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Table Body */
+.student-table tbody td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+/* Zebra striping */
+.student-table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* Hover effect */
+.student-table tbody tr:hover {
+  background: #eef2ff;
+  transition: background 0.2s ease;
+}
+
+/* Action column */
+.student-table td:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   RESPONSIVE (OPTIONAL)
+================================ */
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .admin-main {
+    max-width: 100vw;
+  }
+}
+
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #ffffff;
+  border-right: 1px solid var(--border);
+  padding: 24px;
+}
+
+.logo {
+  color: var(--primary);
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar nav a:hover {
+  background: #eef2ff;
+}
+
+.sidebar nav a.active {
+  background: #e0e7ff;
+  color: var(--primary);
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+
+.admin-main {
+  flex: 1;
+  padding: 32px;
+  max-width: calc(100vw - 220px);
+  overflow-x: hidden;
+}
+
+.admin-main h1 {
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   STUDENT FORM
+================================ */
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.student-form .btn {
+  align-self: end;
+}
+
+/* ===============================
+   STUDENTS TABLE (KEY SECTION)
+================================ */
+
+.student-table {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  overflow-x: auto; /* IMPORTANT */
+}
+
+.student-table table {
+  width: 100%;
+  min-width: 1000px; /* prevents column squeeze */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+/* Table Header */
+.student-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8fafc;
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Table Body */
+.student-table tbody td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+/* Zebra striping */
+.student-table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* Hover effect */
+.student-table tbody tr:hover {
+  background: #eef2ff;
+  transition: background 0.2s ease;
+}
+
+/* Action column */
+.student-table td:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   RESPONSIVE (OPTIONAL)
+================================ */
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .admin-main {
+    max-width: 100vw;
+  }
+}
+/* DASHBOARD CARDS */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280; /* muted gray */
+  letter-spacing: 0.3px;
+}
+
+.dashboard-card h2 {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2563eb; /* primary blue */
+}

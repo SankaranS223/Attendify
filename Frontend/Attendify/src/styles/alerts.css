@@ -1,0 +1,9 @@
+.alert-form {
+  max-width: 1000px;
+  padding: 24px;
+}
+
+.alert-form textarea {
+  min-height: 120px;
+  resize: none;
+}

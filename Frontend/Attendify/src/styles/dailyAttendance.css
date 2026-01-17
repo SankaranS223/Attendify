@@ -1,0 +1,62 @@
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.attendance-table thead {
+  background: #f5f7fb;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6e9f0;
+}
+
+.attendance-table th {
+  font-weight: 600;
+  color: #333;
+}
+
+.attendance-table tbody tr:hover {
+  background: #f9fafc;
+}
+
+.action-cell {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.btn-present {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e6f7ee;
+  color: #0f9d58;
+  font-weight: 600;
+}
+
+.btn-present:hover {
+  background: #c9efdc;
+}
+
+.btn-absent {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #fdecea;
+  color: #d93025;
+  font-weight: 600;
+}
+
+.btn-absent:hover {
+  background: #f9cfc9;
+}

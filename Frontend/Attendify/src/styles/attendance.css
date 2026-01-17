@@ -1,0 +1,91 @@
+/* =========================
+   SUBJECT-WISE ATTENDANCE
+========================= */
+
+.attendance-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.attendance-form select,
+.attendance-form input {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.attendance-form button {
+  grid-column: span 2;
+  padding: 10px;
+}
+
+/* =========================
+   SUBJECT BLOCK
+========================= */
+
+.subject-block {
+  margin-top: 20px;
+}
+
+.subject-block h4 {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+/* =========================
+   TABLE STYLE
+========================= */
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.card table thead {
+  background: #f9fafb;
+}
+
+.card table th,
+.card table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.card table th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.card table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* =========================
+   STATUS COLORS
+========================= */
+
+.green {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.red {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.card p {
+  margin-top: 10px;
+  color: #6b7280;
+}
